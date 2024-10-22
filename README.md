@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+![VhkONx](https://github.com/user-attachments/assets/a2f3f526-7cc3-498a-9582-9c74c3ef0596)
+
 ## Getting Started
 
 First, run the development server:
