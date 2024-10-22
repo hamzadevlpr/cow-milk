@@ -15,13 +15,13 @@ export default function Benefits() {
             />
             <div className="container mx-auto">
                 <div className="text-center my-10">
-                    <h1 className="sm:text-6xl text-4xl font-medium title-font text-gray-900 mb-4 max-w-2xl mx-auto sm:leading-relaxed">
+                    <h1 data-aos="fade-up" className="sm:text-6xl text-4xl font-medium title-font text-gray-900 mb-4 max-w-2xl mx-auto sm:leading-relaxed">
                         Milk is always a good for health
                     </h1>
                 </div>
                 <div className="container px-5 mx-auto">
                     <div className="flex flex-wrap justify-center sm:gap-20">
-                        <div className="relative w-64 h-64 mb-20">
+                        <div data-aos="fade-up" className="relative w-64 h-64 mb-20">
                             <Image
                                 src={milkPackage}
                                 alt="content"
@@ -39,7 +39,7 @@ export default function Benefits() {
                         </div>
 
 
-                        <div className="max-w-sm rounded-lg flex sm:flex-col flex-col-reverse mt-20">
+                        <div data-aos="fade-up" className="max-w-sm rounded-lg flex sm:flex-col flex-col-reverse mt-20">
                             <Image className="rounded-t-lg" src={almonds} alt="" />
                             <div className="p-5">
                                 <p className="mb-3 font-normal">
@@ -49,7 +49,7 @@ export default function Benefits() {
                             </div>
                         </div>
 
-                        <div className="max-w-sm rounded-lg flex sm:flex-col flex-col-reverse">
+                        <div data-aos="fade-up" className="max-w-sm rounded-lg flex sm:flex-col flex-col-reverse">
 
                             <div className="p-5">
                                 <p className="mb-3 font-normal">

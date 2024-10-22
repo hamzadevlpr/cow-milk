@@ -1,18 +1,19 @@
+
 import Image from 'next/image'
 import React from 'react'
 import hero from '../public/hero.png'
 import milk from '../public/milk.png'
-import cow_baby from '../public/vecteezy_smart-doodle-cartoon-cow-character-black-and-white-spot_16330079.png'
+import cow_baby from '../public/Za9e.gif'
 import pattern from '../public/vecteezy_hand-drawn-doodle-vaporize-icon_22183367.png'
 import hero_bg from '../public/vecteezy_grunge-paintbrush-ink-stroke-brush_22070770.png'
 
-
 export default function HomePage() {
+
     return (
         <>
             <section className="w-full relative sm:p-10 bg-[#3FAD3D]">
                 <div className="relative z-10 grid lg:h-[48vh] max-w-7xl place-self-center px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
-                    <div className="z-10 mr-auto place-self-center lg:col-span-7">
+                    <div data-aos="fade-right" className="z-10 mr-auto place-self-center lg:col-span-7">
                         <h1 className="max-w-xl mb-4 text-5xl font-bold tracking-wider md:text-6xl xl:text-[4rem] text-white ">
                             Milk is always good for health
                         </h1>
@@ -20,13 +21,14 @@ export default function HomePage() {
                             Get fresh and organic cow milk delivered to your doorstep, and enjoy the health benefits of milk, which is always good for health.
                         </p>
                         <a
+                            data-aos="zoom-in"
                             href="#"
                             className="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-center bg-white text-gray-700 border border-gray-300 rounded-2xl focus:ring-4 "
                         >
                             Buy Now
                         </a>
                     </div>
-                    <div className="relative mx-auto lg:mt-0 lg:col-span-5 lg:flex">
+                    <div data-aos="fade-left" className="relative mx-auto lg:mt-0 lg:col-span-5 lg:flex">
                         <Image
                             width={1000}
                             height={1000}
@@ -39,7 +41,7 @@ export default function HomePage() {
                             height={1000}
                             src={hero}
                             alt="mockup"
-                            className="relative z-10 drop-shadow-2xl sm:w-[35rem] w-96"
+                            className="pulse relative z-10 drop-shadow-2xl sm:w-[35rem] w-96"
                         />
 
                         <Image
@@ -51,18 +53,44 @@ export default function HomePage() {
                         />
                     </div>
                     <Image
+                        data-aos="fade-up"
                         width={200}
                         height={200}
                         src={cow_baby}
                         alt="cow_baby"
-                        className="lg:block hidden absolute left-[22rem] z-10 sm:w-[15rem] w-96 -bottom-32"
+                        className="lg:block hidden absolute left-[22rem] z-10 sm:w-[13rem] w-96 -bottom-32"
                     />
+                    <div data-aos="fade-up" className="lg:block hidden absolute -bottom-5 left-[26.5rem]">
+                        <svg
+                            id="sw-js-blob-svg"
+                            viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className='absolute w-36 h-36 z-0 opacity-50 transition-all duration-300 ease-in-out'
+                        >
+                            <defs>
+                                <linearGradient id="sw-gradient" x1={0} x2={1} y1={1} y2={0}>
+                                    <stop id="stop1" stopColor="rgba(240, 247, 241, 1)" offset="0%" />
+                                    <stop id="stop2" stopColor="rgba(240, 247, 241, 1)" offset="100%" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                fill="url(#sw-gradient)"
+                                d="M26.2,-32C31.3,-26.9,31,-16.1,32.1,-6.2C33.3,3.8,36,13.1,32.6,18.6C29.1,24.1,19.6,25.8,11,27.9C2.4,30.1,-5.2,32.6,-12.3,31.1C-19.5,29.7,-26.2,24.3,-30.5,17.4C-34.9,10.4,-36.8,1.8,-35.1,-5.9C-33.4,-13.6,-28.1,-20.3,-21.6,-25.2C-15.1,-30,-7.6,-32.9,1.5,-34.7C10.5,-36.5,21.1,-37.1,26.2,-32Z"
+                                width="100%"
+                                height="100%"
+                                transform="translate(50 50)"
+                                strokeWidth={0}
+                                style={{ transition: "0.3s" }}
+                                stroke="url(#sw-gradient)"
+                            />
+                        </svg>
+                    </div>
                 </div>
                 <Image
                     width={200}
                     height={200}
                     src={pattern}
-                    alt="cow_baby"
+                    alt="pattern"
                     className="opacity-30 absolute left-0 sm:-bottom-24 -bottom-10 z-10 sm:w-[15rem] w-40"
                 />
             </section>

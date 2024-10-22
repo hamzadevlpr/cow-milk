@@ -39,19 +39,21 @@ export default function CustomerStories() {
     );
   };
 
+
+
   return (
     <section className="relative space-y-4 sm:p-20 p-10 bg-[#ddf0dc]">
       <h2 className="text-3xl text-left sm:text-center font-bold tracking-tight text-gray-900 sm:text-4xl">
         Customer Stories
       </h2>
-      <div className="relative z-10 flex justify-center items-center">
+      <div data-aos="fade-right" className="relative z-10 flex justify-center items-center">
         <div className="hidden lg:block sm:w-[35rem] w-96 mx-auto lg:mt-0">
           <Image
             width={1000}
             height={1000}
             src={hero}
             alt="mockup"
-            className="relative z-10 drop-shadow-2xl sm:w-[35rem] w-96"
+            className={`spin-slow relative z-10 drop-shadow-2xl sm:w-[35rem] w-96`}
           />
         </div>
         <div className="max-w-2xl text-left space-y-4">

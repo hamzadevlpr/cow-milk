@@ -1,7 +1,9 @@
+import ClientLayout from "@/components/ClientLayout";
+import Navbar from "@/components/Navbar";
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+
 
 const sen = Poppins({
   subsets: ["latin"],
@@ -24,8 +26,10 @@ export default function RootLayout({
       <body
         className={sen.className}
       >
-        <Navbar />
-        {children}
+          <ClientLayout>
+            <Navbar />
+            {children}
+          </ClientLayout>
       </body>
     </html>
   );

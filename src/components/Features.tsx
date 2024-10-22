@@ -30,7 +30,7 @@ export default function Features() {
                 <div className="flex flex-wrap -m-4 text-center">
                     {
                         items.map((item, index) => (
-                            <div key={index} className="p-4 sm:w-1/4 w-1/2">
+                            <div data-aos="fade-up" key={index} className="p-4 sm:w-1/4 w-1/2">
                                 <div className="relative flex flex-col items-center justify-center">
                                     <svg
                                         id="sw-js-blob-svg"

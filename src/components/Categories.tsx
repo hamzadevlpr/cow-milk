@@ -10,21 +10,24 @@ export default function Categories() {
         {
             image: img01,
             title: "Milk strawberry shake",
+            animate: "fade-right"
         },
         {
             image: vanilla,
             title: "Italian vanilla dessert",
+            animate: "fade-up"
         },
         {
             image: milkCake,
             title: "vanila milk cake",
+            animate: "fade-left"
         },
     ]
     return (
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-16 mx-auto">
                 <div className="text-center my-10">
-                    <h1 className="sm:text-6xl text-4xl font-medium title-font text-gray-900 mb-4 max-w-2xl mx-auto sm:leading-relaxed">
+                    <h1 data-aos="fade-up" className="sm:text-6xl text-4xl font-medium title-font text-gray-900 mb-4 max-w-2xl mx-auto sm:leading-relaxed">
                         Create a recipes with our cow milk
                     </h1>
                 </div>
@@ -32,7 +35,7 @@ export default function Categories() {
                     {catItems.map((item, index) => {
                         return (
                             <div key={index} className="flex flex-col text-center items-center">
-                                <div className="w-80 h-80 inline-flex items-center justify-center bg-[#f0f7f1] mb-5 nanogone">
+                                <div data-aos={item.animate} className="w-80 h-80 inline-flex items-center justify-center bg-[#f0f7f1] mb-5 nanogone">
                                     <Image
                                         src={item.image}
                                         alt="content"

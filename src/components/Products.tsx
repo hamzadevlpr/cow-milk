@@ -25,7 +25,7 @@ export default function Products() {
         <section className="text-gray-600 body-font mb-10">
             <div className="container px-5 py-16 mx-auto">
                 <div className="flex sm:flex-row flex-col justify-between items-end my-10">
-                    <h1 className="sm:text-6xl text-5xl font-medium title-font text-gray-900 mb-4 sm:leading-relaxed">
+                    <h1 data-aos="fade-up" className="sm:text-6xl text-5xl font-medium title-font text-gray-900 mb-4 sm:leading-relaxed">
                         Our popular product
                     </h1>
                     <Link href={'/'} className="text-gray-900 text-sm title-font font-medium mb-3 underline hover:text-[#3FAD3D]">
@@ -38,6 +38,9 @@ export default function Products() {
                             <div key={index} className="cursor-pointer relative flex flex-col text-center items-center group">
                                 <div className="w-80 h-80 inline-flex items-center justify-center bg-[#f0f7f1] mb-5 nanogone">
                                     <Image
+                                        data-aos="fade-downt"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="5000"
                                         src={item.image}
                                         alt="content"
                                         width={150}
