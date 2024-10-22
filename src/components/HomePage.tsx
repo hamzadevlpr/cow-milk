@@ -1,22 +1,27 @@
-
+'use client'
 import Image from 'next/image'
-import React from 'react'
 import hero from '../public/hero.png'
 import milk from '../public/milk.png'
-import cow_baby from '../public/Za9e.gif'
-import pattern from '../public/vecteezy_hand-drawn-doodle-vaporize-icon_22183367.png'
 import hero_bg from '../public/vecteezy_grunge-paintbrush-ink-stroke-brush_22070770.png'
+import pattern from '../public/vecteezy_hand-drawn-doodle-vaporize-icon_22183367.png'
+import cow_baby from '../public/Za9e.gif'
+import CustomTypingEffect from './CustomTypingEffect'
 
 export default function HomePage() {
+    const phrases = ['health!', 'bones!', 'teeth!', 'skin!', 'hair!'];
 
     return (
         <>
             <section className="w-full relative sm:p-10 bg-[#3FAD3D]">
                 <div className="relative z-10 grid lg:h-[48vh] max-w-7xl place-self-center px-4 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12">
                     <div data-aos="fade-right" className="z-10 mr-auto place-self-center lg:col-span-7">
-                        <h1 className="max-w-xl mb-4 text-5xl font-bold tracking-wider md:text-6xl xl:text-[4rem] text-white ">
-                            Milk is always good for health
-                        </h1>
+                        <div className="flex items-center">
+                            <h1 className="max-w-[46rem] mb-4 text-5xl font-bold tracking-wider md:text-6xl xl:text-[5rem] text-white ">
+                                Milk is always good for{' '}
+                                <CustomTypingEffect phrases={phrases} typingSpeed={100} pauseDuration={1000} />
+                            </h1>
+                        </div>
+
                         <p className="max-w-xl mb-6 font-light text-gray-50 lg:mb-8 md:text-lg lg:text-xl">
                             Get fresh and organic cow milk delivered to your doorstep, and enjoy the health benefits of milk, which is always good for health.
                         </p>
